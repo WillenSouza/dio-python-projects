@@ -51,7 +51,7 @@ for numero in numeros:
 
 print("\nQuadrados dos números:", quadrado)
 
-print("Metodos de listas:".center(70, "-"))
+print("Métodos da classe list:".center(70, "-"))
 
 lista = []
 
@@ -69,3 +69,33 @@ lista.clear()
 lista = [1, 1, 2, 3, 4, 4, 4]
 
 print(lista.count(4))  # Conta quantas vezes o número 4 aparece na lista
+
+lista.extend(["Python", "Java", "C++"])  # Adiciona os elementos de outra lista à lista atual
+
+print(lista)
+
+print(lista.index("Python"))  # Retorna o índice do primeiro elemento "Python" na lista
+
+lista.pop()  # Remove e retorna o último elemento da lista
+lista.pop(0)  # Remove e retorna o elemento no índice 0 (primeiro elemento)
+print(lista)
+
+lista.reverse()  # Inverte a ordem dos elementos na lista
+print(lista)
+
+lista.remove(4)  # Remove a primeira ocorrência do número 4 na lista
+print(lista)
+
+lista.clear()
+lista = ["banana", "maçã", "laranja", "abacaxi", "uva"]
+lista.sort()  # Ordena os elementos da lista em ordem crescente
+
+print(lista)        
+
+
+lista.sort(reverse=True)  # Ordena os elementos da lista em ordem decrescente
+print(lista)
+
+lista.sort(key=lambda x: len(x))  # Ordena os elementos da lista pelo comprimento de cada elemento
+
+print(len(lista))  # Retorna o número de elementos na lista
